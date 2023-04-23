@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://tmbimagesstorage.blob.core.windows.net/wp-content/uploads/2022/11/Feeling-recognized-at-work-using-MSTeams-1024x576.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins",sans-serif;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.65);
+}
