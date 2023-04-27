@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.example.highoctane.JDBC" %>
 <html>
 <head>
     <title>Database Connection</title>
@@ -9,7 +8,8 @@
 <body>
 <%
     try{
-        Connection con = JDBC.getCon();
+        Class.forName("org.h2.Driver");
+        Connection con = DriverManager.getConnection("jdbc:h2:~/highOctane","sa","");
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery("select * from login");
         while(rs.next()){%>
